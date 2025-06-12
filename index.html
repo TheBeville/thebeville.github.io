@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Steve Beville</title>
+  </head>
+  <body>
+    <div class="hero-container">
+        <div id="left-column">
+            <div id="profile-pic">
+                <img src="./assets/images/mountain-selfie.jpg" alt="Profile Picture">
+            </div>
+            <div id="left-row">
+                <a href="https://github.com/thebeville" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://bsky.app/profile/thebeville.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="mailto:stevebeville@proton.me" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/goodpals" target="_blank"><i class="fa-solid fa-people-group"></i></a>
+            </div>
+        </div>
+
+        <div id="right-column">
+            <h1>Hi, I'm Steve</h1>
+            <p id="bio">I'm a software developer based in the West Midlands, UK. Currently working mainly with Flutter building mobile applications for both iOS and Android. Open to new opportunities and always happy to talk code! I also love learning languages (the non-computer kind), as well as playing and recording music.</p>
+            <br>
+            <div class="btn-row">
+                <a href="#project-gallery"><button class="btn" id="left-btn">Things I've Done</button></a>
+                <a href="#cv-container"><button class="btn" id="right-btn">View My Resume</button></a>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="backToTop()" id="back-to-top-btn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <a href="#project-gallery" id="project-gallery-link">
+        <h2>Recent Projects <i class="fa-solid fa-angle-down"></i></h2>
+    </a>
+    <div id="project-gallery">
+        <div class="project-item" onclick="window.open('https://github.com/TheBeville/doucodetho', '_blank')">
+            <div class="project-title-row">
+                <p class="project-title">Doucodetho</p>
+                <p class="project-info-icons">Flutter / Supabase</p>
+            </div>
+            <div class="project-image-container">
+                <img class="project-image" src="./assets/images/doucodetho-screenshot.png" alt="Doucodetho Project Image">
+            </div>
+            <p class="project-description">Struggling to build a daily coding habit? Keep yourself accountable with this app. The question is: 'do you code, though?'
+            <br><br>
+            Taking inspiration (both for the name and the gamification) from Duolingo and its highly-motivating daily streak system, this is an app designed to both track and encourage the regularity of coding sessions, hopefully keeping up levels motivation and consistency.
+            </p>
+        </div>
+
+        <div class="project-item" onclick="window.open('https://github.com/TheBeville/sr_language_tool', '_blank')">
+            <div class="project-title-row">
+                <p class="project-title">SR Tool</p>
+                <p class="project-info-icons">Flutter / Drift</p>
+            </div>
+            <div class="project-image-container">
+                <img class="project-image" src="./assets/images/sr-tool-screenshot.png" alt="SR Tool Project Image">
+            </div>
+            <p class="project-description">Inspired by spaced repetition tools, such as the ANKI system (the AnkiDroid app, in particular), I wanted to make an app that was tailored a bit more to myself. 
+            <br><br>
+            Gone are things like the 'leech' tag and automatic suspending of cards if incorrectly identified a handful of times - something I could never disable in AnkiDroid, if it's even possible, which made memorising tricky kanji very frustrating.</p>
+        </div>
+
+
+        <div class="project-item" onclick="window.open('https://github.com/goodpals/pixothermic', '_blank')">
+            <div class="project-title-row">
+                <p class="project-title">Pixothermic</p>
+                <p class="project-info-icons">Flutter / Flame</p>
+            </div>
+            <div class="project-image-container">
+                <img class="project-image" src="./assets/images/pixothermic-screenshot.png" alt="Pixothermic Project Image">
+            </div>
+            <p class="project-description"><a class="project-description-fix">Made for the Flame Jam 3.0 in 2 days by</a> <a href="https://github.com/alexobviously">@alexobviously</a> and me, earning us third place, Pixothermic is a platformer centred around the theme of heat. 
+            <br><br>
+            Puzzles primarily revolve around using the global light source to manipulate the environment, such as melting ice blocks with light refracted through movable prisms or evaporating water by positioning heated blocks.</p>
+        </div>
+
+
+        <div class="project-item" onclick="window.open('https://github.com/goodpals/middle-english-mouse-dictionary', '_blank')">
+            <div class="project-title-row">
+                <p class="project-title">MEMD</p>
+                <p class="project-info-icons">HTML / CSS / JS</p>
+            </div>
+            <div class="project-image-container">
+                <img class="project-image" src="./assets/images/memd-screenshot.png" alt="MEMD Project Image">
+            </div>
+            <p class="project-description"><a class="project-description-fix">The Middle English Mouse Dictionary is a prototype browser extension for Firefox that assists in reading middle english web pages by showing dictionary information about middle english words when they are highlighted or double-clicked. 
+            <br><br>
+            It tracks which words you add to your personal word list for each tab, and displays them in a sidebar, which can be opened from the right-click context menu.</p>
+        </div>
+
+
+         <div class="project-item" onclick="window.open('https://github.com/CallumBeaney/tz', '_blank')">
+            <div class="project-title-row">
+                <p class="project-title">TZ (for MacOS)</p>
+                <p class="project-info-icons">Ruby</p>
+            </div>
+            <div class="project-image-container">
+                <img class="project-image" src="./assets/images/tz-screenshot.png" alt="TZ Project Image">
+            </div>
+            <p class="project-description"><a class="project-description-fix">A collaboration with my friend <a href="https://callumbeaney.github.io/">@CallumBeaney</a>, TZ is a terminal-based time zone converter written in Ruby, allowing users to quickly switch between different system timezones using a simple command-line interface.
+            <br><br>Conceived during a situation where the backend didn't have timezone handling implemented and Simulator was locked to follow the MacOS system timezone, going back and forth in the system settings.</p>
+        </div>
+    </div>
+
+    <a href="#cv-pdf" id="cv-pdf-link">
+        <h2>Curriculum Vitae <i class="fa-solid fa-angle-down"></i></h2>
+    </a>
+    <div id="cv-container">
+        <iframe id="cv-pdf" src="./assets/sbeville-dev-cv.pdf" width="840px" height="1125px"></iframe>
+    </div>
+
+    <footer>
+        <p>© 2025, Steve Beville</p>
+        <p>Made with great patience using vanilla HTML, CSS and JavaScript</p>
+    </footer>
+
+    <!-- displays url preview on :hover for project items -->
+    <div id="link-preview-bar" style="display:none;"></div>
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/cb2bb9a170.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
